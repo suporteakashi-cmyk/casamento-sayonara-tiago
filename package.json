@@ -1,0 +1,26 @@
+{
+  "name": "casamento-sayonara-tiago",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "test": "node test/verify.js"
+  },
+  "dependencies": {
+    "@supabase/supabase-js": "^2.119.0",
+    "canvas-confetti": "^1.9.4",
+    "lucide-react": "^1.69.0",
+    "qrcode": "^1.5.4",
+    "react": "^19.3.1",
+    "react-dom": "^19.3.1"
+  },
+  "devDependencies": {
+    "@tailwindcss/vite": "^4.3.4",
+    "@vitejs/plugin-react": "^4.7.0",
+    "tailwindcss": "^4.3.4",
+    "vite": "^6.4.5"
+  }
+}

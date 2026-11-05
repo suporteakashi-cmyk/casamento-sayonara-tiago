@@ -1,0 +1,28 @@
+import { defineConfig } from 'vite';
+import react from '@vitejs/plugin-react';
+import tailwindcss from '@tailwindcss/vite';
+
+// https://vitejs.dev/config/
+export default defineConfig({
+  plugins: [
+    react(),
+    tailwindcss(),
+  ],
+  build: {
+    rollupOptions: {
+      output: {
+        manualChunks: {
+          'vendor-react': ['react', 'react-dom'],
+          'vendor-supabase': ['@supabase/supabase-js'],
+          'vendor-icons': ['lucide-react'],
+          'vendor-utils': ['canvas-confetti', 'qrcode'],
+        },
+      },
+    },
+    chunkSizeWarningLimit: 600,
+  },
+  server: {
+    port: 3000,
+    open: false,
+  },
+});
