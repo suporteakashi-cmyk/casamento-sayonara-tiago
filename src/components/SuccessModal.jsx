@@ -18,7 +18,7 @@ export default function SuccessModal({ gift, guestName, onClose }) {
   }, []);
 
   return (
-    <div className="fixed inset-0 z-50 overflow-y-auto bg-stone-900/60 backdrop-blur-xs flex items-center justify-center p-4">
+    <div className="fixed inset-0 z-50 overflow-y-auto bg-stone-950/70 flex items-center justify-center p-3 sm:p-4">
       <div className="relative w-full max-w-md bg-white rounded-3xl shadow-2xl border border-[#CBD5E1] p-6 sm:p-8 text-center animate-fade-in my-8">
         
         {/* Close icon button */}

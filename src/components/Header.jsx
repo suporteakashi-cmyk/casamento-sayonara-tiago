@@ -18,7 +18,7 @@ export default function Header({ currentView, setCurrentView, isAdmin, onAdminLo
   };
 
   return (
-    <header className="sticky top-0 z-40 bg-[#FAF9F5]/90 backdrop-blur-md border-b border-[#D8DEE4]/60 transition-all">
+    <header className="sticky top-0 z-40 bg-[#FAF9F5]/98 border-b border-[#D8DEE4]/70 shadow-xs transition-colors">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-20">
           

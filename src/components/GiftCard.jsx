@@ -19,9 +19,10 @@ export default function GiftCard({ gift, onReserve }) {
           <img
             src={gift.image_url}
             alt={gift.name}
-            className="w-full h-full object-cover transition-transform duration-500 hover:scale-105"
+            className="w-full h-full object-cover sm:transition-transform sm:duration-500 sm:hover:scale-105"
             onError={() => setImageError(true)}
             loading="lazy"
+            decoding="async"
           />
         ) : (
           <div className="w-full h-full flex flex-col items-center justify-center p-6 text-center bg-gradient-to-br from-[#F4F6F0] to-[#E9ECE1]">
@@ -35,19 +36,19 @@ export default function GiftCard({ gift, onReserve }) {
         {/* Status Badge */}
         <div className="absolute top-3 right-3">
           {isAvailable && (
-            <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-semibold bg-white/95 text-[#3D4D22] border border-[#B9C8A5] shadow-xs backdrop-blur-xs">
+            <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-semibold bg-white/95 text-[#3D4D22] border border-[#B9C8A5] shadow-xs">
               <span className="w-2 h-2 rounded-full bg-[#556B2F] animate-pulse" />
               Disponível
             </span>
           )}
           {isReserved && (
-            <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-semibold bg-[#2E3B1B]/90 text-white shadow-xs backdrop-blur-xs">
+            <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-semibold bg-[#2E3B1B]/95 text-white shadow-xs">
               <Lock className="w-3 h-3 text-emerald-300" />
               Reservado
             </span>
           )}
           {isReceived && (
-            <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-semibold bg-emerald-700/90 text-white shadow-xs backdrop-blur-xs">
+            <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-semibold bg-emerald-700/95 text-white shadow-xs">
               <CheckCircle className="w-3 h-3" />
               Recebido
             </span>

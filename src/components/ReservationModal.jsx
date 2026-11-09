@@ -57,7 +57,7 @@ export default function ReservationModal({ gift, onClose, onConfirmReservation }
   };
 
   return (
-    <div className="fixed inset-0 z-50 overflow-y-auto bg-stone-900/60 backdrop-blur-xs flex items-center justify-center p-4">
+    <div className="fixed inset-0 z-50 overflow-y-auto bg-stone-950/70 flex items-center justify-center p-3 sm:p-4">
       
       {/* Modal card */}
       <div className="relative w-full max-w-lg bg-white rounded-3xl shadow-2xl border border-[#CBD5E1] overflow-hidden animate-fade-in my-8">

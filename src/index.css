@@ -15,13 +15,31 @@
 
     --color-silver-light: #F4F5F7;
     --color-silver-border: #D8DEE4;
-    --color-silver-shine: linear-gradient(135deg, #E2E8F0 0%, #CBD5E1 50%, #F1F5F9 100%);
+  }
+
+  html {
+    scroll-behavior: smooth;
+    -webkit-text-size-adjust: 100%;
   }
 
   body {
     font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
     color: #2D372E;
     background-color: #FAF9F5;
+    -webkit-tap-highlight-color: transparent;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    overflow-x: hidden;
+  }
+
+  /* Prevent iOS automatic zoom on inputs */
+  input, select, textarea {
+    font-size: 16px !important;
+  }
+  @media (min-width: 640px) {
+    input, select, textarea {
+      font-size: 0.875rem !important; /* 14px on desktop */
+    }
   }
 
   h1, h2, h3, .font-serif-wedding {
@@ -36,8 +54,8 @@
 
 /* Elegant scrollbar */
 ::-webkit-scrollbar {
-  width: 8px;
-  height: 8px;
+  width: 6px;
+  height: 6px;
 }
 ::-webkit-scrollbar-track {
   background: #F4F6F1;
@@ -50,58 +68,58 @@
   background: #556B2F;
 }
 
-/* Subtle botanical motif background pattern */
+/* Hardware accelerated smooth background */
 .bg-botanical-subtle {
   background-color: #FAF9F5;
-  background-image: radial-gradient(#556B2F 0.5px, transparent 0.5px), radial-gradient(#BCC7B2 0.5px, #FAF9F5 0.5px);
-  background-size: 20px 20px;
-  background-position: 0 0, 10px 10px;
-  background-opacity: 0.03;
+  background-image: linear-gradient(180deg, #FAF9F5 0%, #F5F7F2 100%);
 }
 
 /* Silver border card */
 .card-silver {
   background: #FFFFFF;
   border: 1px solid rgba(203, 213, 225, 0.7);
-  box-shadow: 0 4px 20px -2px rgba(85, 107, 47, 0.05), 0 2px 6px -1px rgba(0, 0, 0, 0.02);
-  transition: all 0.25s ease;
+  box-shadow: 0 4px 16px -2px rgba(85, 107, 47, 0.04), 0 2px 4px -1px rgba(0, 0, 0, 0.02);
+  transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
+  will-change: transform;
 }
 
 .card-silver:hover {
   border-color: rgba(85, 107, 47, 0.4);
-  box-shadow: 0 10px 30px -4px rgba(85, 107, 47, 0.12), 0 4px 10px -2px rgba(0, 0, 0, 0.03);
+  box-shadow: 0 10px 24px -4px rgba(85, 107, 47, 0.1), 0 4px 8px -2px rgba(0, 0, 0, 0.03);
 }
 
 /* Silver shine button effect */
 .btn-olive {
   background-color: #556B2F;
   color: #FFFFFF;
-  transition: all 0.2s ease-in-out;
+  transition: background-color 0.15s ease, transform 0.15s ease;
+  touch-action: manipulation;
 }
 .btn-olive:hover {
   background-color: #445625;
-  transform: translateY(-1px);
-  box-shadow: 0 4px 14px rgba(85, 107, 47, 0.35);
+}
+.btn-olive:active {
+  transform: scale(0.98);
 }
 
 .btn-silver {
   background-color: #FFFFFF;
   color: #3D4D22;
   border: 1px solid #CBD5E1;
-  transition: all 0.2s ease-in-out;
+  transition: all 0.15s ease;
+  touch-action: manipulation;
 }
 .btn-silver:hover {
   background-color: #F8FAFC;
   border-color: #94A3B8;
-  color: #1E291B;
 }
 
-/* Animations */
+/* Smooth fade in */
 @keyframes fadeIn {
-  from { opacity: 0; transform: translateY(6px); }
+  from { opacity: 0; transform: translateY(4px); }
   to { opacity: 1; transform: translateY(0); }
 }
 
 .animate-fade-in {
-  animation: fadeIn 0.3s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+  animation: fadeIn 0.2s ease-out forwards;
 }
