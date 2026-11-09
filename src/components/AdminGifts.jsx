@@ -117,12 +117,12 @@ export default function AdminGifts({
             >
               <div>
                 {/* Header Image & Badges */}
-                <div className="relative aspect-[16/9] w-full bg-[#F4F6F0] overflow-hidden">
+                <div className="relative aspect-[16/9] w-full bg-gradient-to-b from-[#F7F8F4] to-[#ECEFE6] p-2 flex items-center justify-center overflow-hidden">
                   {gift.image_url ? (
                     <img
                       src={gift.image_url}
                       alt={gift.name}
-                      className="w-full h-full object-cover"
+                      className="w-full h-full object-contain"
                     />
                   ) : (
                     <div className="w-full h-full flex items-center justify-center text-[#556B2F] font-serif-wedding text-lg font-bold">

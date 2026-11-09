@@ -13,13 +13,13 @@ export default function GiftCard({ gift, onReserve }) {
       !isAvailable ? 'opacity-90 bg-stone-50/50' : 'bg-white'
     }`}>
       
-      {/* Image container */}
-      <div className="relative aspect-[4/3] w-full overflow-hidden bg-[#F4F6F0]">
+      {/* Image container with automatic fit (no aggressive zoom) */}
+      <div className="relative aspect-[4/3] w-full overflow-hidden bg-gradient-to-b from-[#FAFBF8] to-[#EFF2E9] flex items-center justify-center p-3 sm:p-4">
         {!imageError && gift.image_url ? (
           <img
             src={gift.image_url}
             alt={gift.name}
-            className="w-full h-full object-cover sm:transition-transform sm:duration-500 sm:hover:scale-105"
+            className="w-full h-full object-contain drop-shadow-xs sm:transition-transform sm:duration-300 sm:hover:scale-105"
             onError={() => setImageError(true)}
             loading="lazy"
             decoding="async"

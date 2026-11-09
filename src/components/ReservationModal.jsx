@@ -88,7 +88,7 @@ export default function ReservationModal({ gift, onClose, onConfirmReservation }
             <img
               src={gift.image_url}
               alt={gift.name}
-              className="w-16 h-16 rounded-xl object-cover border border-stone-200 shrink-0"
+              className="w-16 h-16 rounded-xl object-contain p-1 bg-white border border-stone-200 shrink-0"
             />
           ) : (
             <div className="w-16 h-16 rounded-xl bg-white border border-[#CBD5E1] flex items-center justify-center text-[#556B2F] shrink-0 font-serif-wedding font-bold text-lg">

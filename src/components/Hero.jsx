@@ -99,16 +99,16 @@ export default function Hero({ onExploreClick }) {
           <span>Celebração do Nosso Amor</span>
         </div>
 
-        {/* Official Couple Photo in Romantic Frame */}
-        <div className="max-w-xs sm:max-w-sm mx-auto mb-8 sm:mb-10">
-          <div className="relative p-2.5 sm:p-3 bg-white rounded-3xl border border-[#CBD5E1] shadow-md transition-transform duration-300 hover:scale-[1.01]">
+        {/* Official Couple Photo in Romantic Frame - Natural 9:16 vertical fit */}
+        <div className="max-w-[270px] sm:max-w-[310px] mx-auto mb-8 sm:mb-10">
+          <div className="relative p-2 sm:p-2.5 bg-white rounded-3xl border border-[#CBD5E1] shadow-md transition-transform duration-300 hover:scale-[1.01]">
             
-            {/* Corner Botanical Ring Accents */}
-            <div className="relative aspect-[3/4] w-full rounded-2xl overflow-hidden bg-stone-100">
+            {/* 9:16 Aspect Ratio matching natural portrait photo */}
+            <div className="relative aspect-[9/16] w-full rounded-2xl overflow-hidden bg-stone-100">
               <img
                 src="/sayonara-tiago.jpg"
                 alt="Sayonara & Tiago"
-                className="w-full h-full object-cover object-top"
+                className="w-full h-full object-cover object-center"
                 loading="eager"
                 decoding="async"
               />
