@@ -5,6 +5,6 @@
   <path d="M 28 65 C 28 45, 38 35, 48 30 C 44 38, 44 48, 38 58 Z" fill="#556B2F" opacity="0.85"/>
   <!-- Leaf branch right -->
   <path d="M 72 65 C 72 45, 62 35, 52 30 C 56 38, 56 48, 62 58 Z" fill="#6B8E23" opacity="0.85"/>
-  <!-- Monogram S & T -->
-  <text x="50" y="58" font-family="'Cormorant Garamond', serif" font-size="28" font-weight="600" fill="#2E3B1B" text-anchor="middle" letter-spacing="1">S&amp;T</text>
+  <!-- Monogram T & S -->
+  <text x="50" y="58" font-family="'Cormorant Garamond', serif" font-size="28" font-weight="600" fill="#2E3B1B" text-anchor="middle" letter-spacing="1">T&amp;S</text>
 </svg>

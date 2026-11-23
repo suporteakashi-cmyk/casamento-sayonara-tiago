@@ -75,7 +75,7 @@ export default function ReservationModal({ gift, onClose, onConfirmReservation }
           
           <div className="flex items-center gap-2 text-white/80 text-xs font-semibold uppercase tracking-wider mb-1">
             <Heart className="w-4 h-4 fill-white/80" />
-            <span>Presentear Sayonara &amp; Tiago</span>
+            <span>Presentear Tiago &amp; Sayonara</span>
           </div>
           <h3 className="font-serif-wedding text-2xl font-bold text-white">
             Confirmar Reserva do Presente
@@ -92,7 +92,7 @@ export default function ReservationModal({ gift, onClose, onConfirmReservation }
             />
           ) : (
             <div className="w-16 h-16 rounded-xl bg-white border border-[#CBD5E1] flex items-center justify-center text-[#556B2F] shrink-0 font-serif-wedding font-bold text-lg">
-              S&amp;T
+              T&amp;S
             </div>
           )}
           <div>
@@ -157,7 +157,7 @@ export default function ReservationModal({ gift, onClose, onConfirmReservation }
             </label>
             <textarea
               rows={3}
-              placeholder="Escreva uma mensagem especial para a Sayonara e o Tiago..."
+              placeholder="Escreva uma mensagem especial para o Tiago e a Sayonara..."
               value={guestMessage}
               onChange={(e) => setGuestMessage(e.target.value)}
               disabled={isSubmitting}

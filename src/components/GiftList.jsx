@@ -51,7 +51,7 @@ export default function GiftList({ gifts, loading, onReserveGift }) {
           Catálogo de Presentes
         </h2>
         <p className="mt-3 text-sm sm:text-base text-stone-600">
-          Escolha o item com o qual deseja presentear Sayonara &amp; Tiago. Cada detalhe foi pensado com carinho para o nosso novo lar.
+          Escolha o item com o qual deseja presentear Tiago &amp; Sayonara. Cada detalhe foi pensado com carinho para o nosso novo lar.
         </p>
       </div>
 

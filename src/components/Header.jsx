@@ -28,11 +28,11 @@ export default function Header({ currentView, setCurrentView, isAdmin, onAdminLo
             className="group flex items-center gap-3 text-left focus:outline-none"
           >
             <div className="w-11 h-11 rounded-full border border-[#556B2F]/40 bg-[#F4F6F0] flex items-center justify-center text-[#556B2F] shadow-sm transition-transform group-hover:scale-105">
-              <span className="font-serif-wedding text-xl font-bold tracking-tight">S&amp;T</span>
+              <span className="font-serif-wedding text-xl font-bold tracking-tight">T&amp;S</span>
             </div>
             <div>
               <span className="font-serif-wedding text-xl sm:text-2xl font-bold text-[#2E3B1B] block leading-tight tracking-wide">
-                Sayonara &amp; Tiago
+                Tiago &amp; Sayonara
               </span>
               <span className="text-[11px] uppercase tracking-widest text-stone-500 font-medium">
                 16 de Maio de 2027

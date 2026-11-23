@@ -8,12 +8,12 @@ export default function Footer({ onAdminClick }) {
         
         {/* Monogram */}
         <div className="w-12 h-12 rounded-full border border-[#556B2F]/40 bg-white flex items-center justify-center text-[#556B2F] mb-4 shadow-xs">
-          <span className="font-serif-wedding text-xl font-bold">S&amp;T</span>
+          <span className="font-serif-wedding text-xl font-bold">T&amp;S</span>
         </div>
 
         {/* Wedding Couple Name */}
         <h3 className="font-serif-wedding text-2xl sm:text-3xl font-bold text-[#263116] mb-1">
-          Sayonara &amp; Tiago
+          Tiago &amp; Sayonara
         </h3>
         <p className="font-display-wedding text-xs uppercase tracking-[0.2em] text-[#556B2F] mb-4 font-semibold">
           16 de Maio de 2027
@@ -27,7 +27,7 @@ export default function Footer({ onAdminClick }) {
 
         <div className="flex flex-col sm:flex-row items-center justify-between w-full text-xs text-stone-400 gap-4">
           <p>
-            © 2027 Casamento Sayonara dos Santos Silva &amp; Tiago Juliano Santos da Silva. Todos os direitos reservados.
+            © 2027 Casamento Tiago Juliano Santos da Silva &amp; Sayonara dos Santos Silva. Todos os direitos reservados.
           </p>
           <button
             onClick={onAdminClick}

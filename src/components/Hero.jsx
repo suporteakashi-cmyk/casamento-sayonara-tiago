@@ -84,11 +84,11 @@ export default function Hero({ onExploreClick }) {
 
         {/* Names in Highlight */}
         <h1 className="font-serif-wedding text-4xl sm:text-6xl md:text-7xl font-bold text-[#263116] tracking-tight leading-[1.08] mb-2 sm:mb-3">
-          Sayonara &amp; Tiago
+          Tiago &amp; Sayonara
         </h1>
 
         <p className="font-display-wedding text-[11px] sm:text-xs md:text-sm tracking-[0.2em] text-[#556B2F] uppercase mb-5 sm:mb-6 font-semibold px-2">
-          Sayonara dos Santos Silva &amp; Tiago Juliano Santos da Silva
+          Tiago Juliano Santos da Silva &amp; Sayonara dos Santos Silva
         </p>
 
         {/* Wedding Date Pill */}
@@ -99,15 +99,15 @@ export default function Hero({ onExploreClick }) {
           <span>Celebração do Nosso Amor</span>
         </div>
 
-        {/* Official Couple Photo in Romantic Frame - Natural 9:16 vertical fit */}
-        <div className="max-w-[270px] sm:max-w-[310px] mx-auto mb-8 sm:mb-10">
+        {/* Official Couple Photo in Romantic Frame */}
+        <div className="max-w-[320px] sm:max-w-[380px] mx-auto mb-8 sm:mb-10">
           <div className="relative p-2 sm:p-2.5 bg-white rounded-3xl border border-[#CBD5E1] shadow-md transition-transform duration-300 hover:scale-[1.01]">
             
-            {/* 9:16 Aspect Ratio matching natural portrait photo */}
-            <div className="relative aspect-[9/16] w-full rounded-2xl overflow-hidden bg-stone-100">
+            {/* 3:4 Aspect Ratio matching natural portrait photo */}
+            <div className="relative aspect-[3/4] w-full rounded-2xl overflow-hidden bg-stone-100">
               <img
-                src="/sayonara-tiago.jpg"
-                alt="Sayonara & Tiago"
+                src="/tiago-sayonara.jpg"
+                alt="Tiago & Sayonara"
                 className="w-full h-full object-cover object-center"
                 loading="eager"
                 decoding="async"
@@ -117,7 +117,7 @@ export default function Hero({ onExploreClick }) {
               <div className="absolute inset-x-0 bottom-0 h-16 bg-gradient-to-t from-black/50 via-transparent to-transparent flex items-end justify-center pb-2.5">
                 <span className="text-white font-serif-wedding text-sm sm:text-base font-semibold drop-shadow-sm flex items-center gap-1.5">
                   <Heart className="w-3.5 h-3.5 fill-white text-white" />
-                  Sayonara &amp; Tiago
+                  Tiago &amp; Sayonara
                 </span>
               </div>
             </div>

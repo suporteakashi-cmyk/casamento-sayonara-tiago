@@ -51,7 +51,7 @@ export default function AdminQRCodeModal({ isOpen, onClose }) {
     printWindow.document.write(`
       <html>
         <head>
-          <title>QR Code — Casamento Sayonara & Tiago</title>
+          <title>QR Code — Casamento Tiago & Sayonara</title>
           <style>
             body { font-family: 'Georgia', serif; text-align: center; padding: 40px; color: #263116; }
             h1 { font-size: 28px; margin-bottom: 6px; }
@@ -61,7 +61,7 @@ export default function AdminQRCodeModal({ isOpen, onClose }) {
           </style>
         </head>
         <body>
-          <h1>Sayonara & Tiago</h1>
+          <h1>Tiago & Sayonara</h1>
           <p>16 de Maio de 2027 • Lista de Presentes</p>
           <img src="${qrDataUrl}" alt="QR Code Casamento" />
           <div class="hint">Aponte a câmera do celular para abrir a lista de presentes</div>

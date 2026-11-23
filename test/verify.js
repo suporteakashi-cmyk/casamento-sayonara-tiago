@@ -110,7 +110,7 @@ await runConcurrencyTest();
 // 4. Verificação da Identidade Visual e Informações do Casamento
 console.log('\n🎨 4. Verificando Identidade Visual e Informações Oficiais:');
 const heroContent = fs.readFileSync(path.join(rootDir, 'src', 'components', 'Hero.jsx'), 'utf-8');
-assert(heroContent.includes('Sayonara dos Santos Silva &amp; Tiago Juliano Santos da Silva') || heroContent.includes('Sayonara &amp; Tiago'), 'Nomes oficiais dos noivos configurados');
+assert(heroContent.includes('Tiago &amp; Sayonara') || heroContent.includes('Sayonara &amp; Tiago'), 'Nomes oficiais dos noivos configurados');
 assert(heroContent.includes('16 de Maio de 2027') || heroContent.includes('2027-05-16'), 'Data do casamento (16 de maio de 2027) configurada');
 assert(heroContent.includes('Estamos muito felizes em compartilhar esse momento tão especial com você!'), 'Frase de boas-vindas oficial incluída');
 

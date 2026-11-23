@@ -106,10 +106,10 @@ export default function AdminDashboard({
         <div>
           <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-[#ECF0E6] text-[#556B2F] text-xs font-semibold uppercase tracking-wider mb-2">
             <Sparkles className="w-3.5 h-3.5" />
-            Painel Exclusivo da Noiva
+            Painel Exclusivo dos Noivos
           </div>
           <h1 className="font-serif-wedding text-3xl sm:text-4xl font-bold text-[#263116]">
-            Casamento Sayonara &amp; Tiago
+            Casamento Tiago &amp; Sayonara
           </h1>
           <p className="text-xs sm:text-sm text-stone-500 mt-1">
             Data: 16 de maio de 2027 • Gerenciamento centralizado de presentes e reservas

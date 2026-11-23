@@ -29,7 +29,7 @@ export default function GiftCard({ gift, onReserve }) {
             <div className="w-14 h-14 rounded-full bg-white/80 border border-[#CBD5E1] flex items-center justify-center text-[#556B2F] mb-2 shadow-xs">
               <Gift className="w-7 h-7" />
             </div>
-            <span className="font-serif-wedding text-stone-600 text-sm font-medium">Sayonara &amp; Tiago</span>
+            <span className="font-serif-wedding text-stone-600 text-sm font-medium">Tiago &amp; Sayonara</span>
           </div>
         )}
 
