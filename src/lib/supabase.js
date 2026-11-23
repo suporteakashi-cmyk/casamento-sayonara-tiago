@@ -220,10 +220,11 @@ export async function getReservations() {
  * Admin: Cancel reservation and release gift back to 'available'
  */
 export async function cancelReservation(reservationId, giftId) {
-  const { error: cancelError } = await supabase
+  const { data: deletedRows, error: cancelError } = await supabase
     .from('reservations')
     .delete()
-    .eq('id', reservationId);
+    .eq('id', reservationId)
+    .select();
 
   if (cancelError) throw cancelError;
 
@@ -234,6 +235,11 @@ export async function cancelReservation(reservationId, giftId) {
       .eq('id', giftId);
 
     if (giftError) throw giftError;
+  }
+
+  if (deletedRows && deletedRows.length === 0) {
+    const rlsError = new Error('Permissão de exclusão pendente no Supabase.');
+    throw rlsError;
   }
 
   return true;

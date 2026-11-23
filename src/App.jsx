@@ -207,19 +207,26 @@ export default function App() {
   };
 
   const handleCancelReservation = async (reservationId, giftId) => {
-    if (isSupabaseConfigured) {
-      await cancelReservation(reservationId, giftId);
+    try {
+      if (isSupabaseConfigured) {
+        await cancelReservation(reservationId, giftId);
+        setReservations((prev) => prev.filter((r) => r.id !== reservationId));
+        setGifts((prev) =>
+          prev.map((g) => (g.id === giftId ? { ...g, status: 'available' } : g))
+        );
+        showToast('Reserva cancelada e presente liberado!');
+      } else {
+        setReservations((prev) => prev.filter((r) => r.id !== reservationId));
+        setGifts((prev) =>
+          prev.map((g) => (g.id === giftId ? { ...g, status: 'available' } : g))
+        );
+        showToast('Reserva cancelada localmente.', 'info');
+      }
+    } catch (err) {
+      console.error('Erro ao cancelar reserva:', err);
+      showToast(err.message || 'Erro ao cancelar reserva no Supabase.', 'error');
       await loadReservations();
       await loadGifts();
-      showToast('Reserva cancelada e presente liberado!');
-    } else {
-      setReservations((prev) =>
-        prev.map((r) => (r.id === reservationId ? { ...r, status: 'cancelled' } : r))
-      );
-      setGifts((prev) =>
-        prev.map((g) => (g.id === giftId ? { ...g, status: 'available' } : g))
-      );
-      showToast('Reserva cancelada localmente.', 'info');
     }
   };
 
